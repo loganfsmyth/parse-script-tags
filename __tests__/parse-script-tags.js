@@ -1,5 +1,3 @@
-const babylon = require("babylon");
-
 const expect = require("expect.js");
 import {
   generateWhitespace,
@@ -14,7 +12,7 @@ const SOURCES = {
     `
 <script src="./some-file.js"></script>
 <script>
-    
+
 </script>
     `
   ,

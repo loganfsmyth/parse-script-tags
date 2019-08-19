@@ -1,5 +1,5 @@
 import * as types from "@babel/types";
-import * as babylon from "babylon";
+import * as parser from "@babel/parser";
 
 import {
   generateWhitespace,
@@ -16,7 +16,7 @@ function parseScript({source, line}) {
   }
 
   try {
-    return babylon.parse(source, {
+    return parser.parse(source, {
       sourceType: "script",
       startLine: line
     });
